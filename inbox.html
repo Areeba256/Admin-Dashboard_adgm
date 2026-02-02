@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inbox</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/dashboard.css" />
+  </head>
+  <body>
+    <div class="main-wrap">
+      <div class="rectangle"></div>
+      <div class="shape-2"></div>
+      <div class="shape-3"></div>
+
+      <div class="main-container">
+        <div class="sidebar">
+          <div class="logo-div">
+            <a href="#" class="logo">
+              <span>
+                <img src="adgm-logo.png" alt="" />
+              </span>
+            </a>
+          </div>
+          <ul>
+            <li>
+              <a href="dashboard.html">
+                <span class="sidebar-icons">
+                  <img src="assets/icons/home.png" alt="" />
+                </span>
+                <span class="nav-item">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="sidebar-icons">
+                  <img src="assets/icons/inbox.png" alt="" />
+                </span>
+                <span class="nav-item" id="Inbox">Inbox</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="sidebar-icons">
+                  <img src="assets/icons/teams.png" alt="" />
+                </span>
+                <span class="nav-item">Teams</span>
+              </a>
+            </li>
+            <li>
+              <a href="E-services.html">
+                <span class="sidebar-icons">
+                  <img src="assets/icons/e-services.png" alt="" />
+                </span>
+                <span class="nav-item">E-Services</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="sidebar-icons">
+                  <img src="assets/icons/events-announcements.png" alt="" />
+                </span>
+                <span class="nav-item">Events and announcements</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <span class="sidebar-icons">
+                  <img src="assets/icons/company resources.png" alt="" />
+                </span>
+                <span class="nav-item">Company Resources</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <span class="sidebar-icons">
+                  <img src="assets/icons/company reports.png" alt="" />
+                </span>
+                <span class="nav-item">Company Reports</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <span class="sidebar-icons">
+                  <img src="assets/icons/organization chart.png" alt="" />
+                </span>
+                <span class="nav-item">organization chart</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="dashboard-body">
+          <div class="top-bar-container">
+            <div class="heading">
+              <h1 class="topbar-heading" id="username"></h1>
+            </div>
+
+            <div class="topbar-right">
+              <div>
+                <a href="javascript:void(0)">
+                  <div class="topbar-icons">
+                    <img src="assets/icons/search icon.svg" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="javascript:void(0)">
+                  <div class="topbar-icons">
+                    <img src="assets/icons/bell icon.svg" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="javascript:void(0)">
+                  <div class="topbar-icons">
+                    <img src="assets/icons/settings.png" alt="" />
+                  </div>
+                </a>
+              </div>
+              <div class="profile">
+                <div>
+                  <a href="javascript:void(0)">
+                    <img src="assets/icons/Suhail-Muhairri.png" alt="" />
+                  </a>
+                </div>
+                <div class="dropdown">
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      id="userProfile"
+                    >
+                      Suhail Muhairri
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">My Profile</a></li>
+
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#" onclick="redirect()"
+                          >Log out</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="e-services-section-1">
+            <div id="toggle-inbox"></div>
+            <div class="primary-heading ps-2">
+              <h2>Inbox</h2>
+            </div>
+            <div class="span-headings">
+              <a href="#">Home/</a>
+              <span class="color-brown">Inbox</span>
+            </div>
+          </div>
+
+          <div class="inbox-lower">
+            <div class="requests">
+              <div class="row requests-row">
+                <div class="col request-box">
+                  <div class="green-sq sq-settings">
+                    <img src="assets/icons/tick.png" alt="" />
+                  </div>
+                  <h2 class="number">12</h2>
+                  <h2 class="status">Approved Requests</h2>
+                </div>
+                <div class="col request-box">
+                  <div class="red-sq sq-settings">
+                    <img src="assets/icons/cross.png" alt="" />
+                  </div>
+                  <h2 class="number">04</h2>
+                  <h2 class="status">Rejected Requests</h2>
+                </div>
+                <div class="col request-box">
+                  <div class="orange-sq sq-settings">
+                    <img src="assets/icons/pending.png" alt="" />
+                  </div>
+                  <h2 class="number">04</h2>
+                  <h2 class="status">Pending Requests</h2>
+                </div>
+                <div class="col request-box">
+                  <div class="brown-sq sq-settings">
+                    <img src="assets/icons/total.png" alt="" />
+                  </div>
+                  <h2 class="number">17</h2>
+                  <h2 class="status">Total Requests</h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="request-table">
+              <h3 class="form-headings">Request Queue</h3>
+              <table class="table">
+                <thead>
+                  <tr class="table-head">
+                    <th scope="col">Requester ID</th>
+                    <th scope="col">Request Name</th>
+                    <th scope="col">Request Type</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="row-settings align-middle">
+                    <td class="font-settings">#13435</td>
+                    <td>
+                      <img src="assets/icons/profile picture.svg" alt="" />
+                      <span class="font-settings">Ahmed Saeed</span>
+                    </td>
+                    <td class="font-settings">Annual Leave</td>
+                    <td><div class="orange-div-m-inbox">Pending</div></td>
+                    <td class="font-settings">Application for annual leave</td>
+                    <td>
+                      <a href="" class="view-details">View Details</a>
+                    </td>
+                  </tr>
+
+                  <tr class="row-settings align-middle">
+                    <td class="font-settings">#11435</td>
+                    <td>
+                      <img src="assets/icons/profile picture.svg" alt="" />
+                      <span class="font-settings">Ahmed Saeed</span>
+                    </td>
+                    <td class="font-settings">Travel Claim</td>
+                    <td><div class="orange-div-m-inbox">Pending</div></td>
+                    <td class="font-settings">Travel Claim</td>
+                    <td>
+                      <a href="" class="view-details">View Details</a>
+                    </td>
+                  </tr>
+
+                  <tr class="row-settings align-middle">
+                    <td class="font-settings">#23435</td>
+                    <td>
+                      <img src="assets/icons/profile picture.svg" alt="" />
+                      <span class="font-settings">Ahmed Saeed</span>
+                    </td>
+                    <td class="font-settings">Educational Loan</td>
+                    <td><div class="orange-div-m-inbox">Pending</div></td>
+                    <td class="font-settings">Educational Loan</td>
+                    <td>
+                      <a href="" class="view-details">View Details</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+      getData();
+    </script>
+  </body>
+</html>
